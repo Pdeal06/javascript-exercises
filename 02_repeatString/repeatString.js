@@ -1,17 +1,16 @@
 const repeatString = function(string, num) {
   let output = ''
+  if (num < 0) {
+    output = 'ERROR';
+  }
   for (let i = 0; i < num; i++) {
-    if (i == num - 1){
-      output += string;
-      return output;
-    } else {
-      output += string
-      continue
+    output += string;
     }
+  return output;
      
   }
   
-};
+
 
 // Do not edit below this line
 module.exports = repeatString;
